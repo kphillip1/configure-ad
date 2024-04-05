@@ -94,6 +94,8 @@ Install Active Directory
 - Restart and then log back into DC-1 as user: mydomain.com\labuser
 
 ![image](https://github.com/kphillip1/configure-ad/assets/165929885/893ddf8a-4d15-45b9-bb03-af573ec86810)
+![image](https://github.com/kphillip1/configure-ad/assets/165929885/6ba52a91-03ee-429a-9380-08d8804809f3)
+![image](https://github.com/kphillip1/configure-ad/assets/165929885/ef5b7e5d-498a-4cb3-a73d-b43fe2928479)
 
 
 Create an Admin and Normal User Account in AD
@@ -104,6 +106,8 @@ Create an Admin and Normal User Account in AD
 - Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”
 - User jane_admin as your admin account from now on
 
+![image](https://github.com/kphillip1/configure-ad/assets/165929885/b78fec39-7612-43c0-a237-2c0e778f2a4d)
+![image](https://github.com/kphillip1/configure-ad/assets/165929885/e6d6227a-716a-4dcf-9d73-be4b5eb9f18c)
 
 Join Client-1 to your domain (mydomain.com)
 - From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
