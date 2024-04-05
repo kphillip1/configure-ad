@@ -6,9 +6,6 @@
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
@@ -109,6 +106,8 @@ Create an Admin and Normal User Account in AD
 ![image](https://github.com/kphillip1/configure-ad/assets/165929885/b78fec39-7612-43c0-a237-2c0e778f2a4d)
 ![image](https://github.com/kphillip1/configure-ad/assets/165929885/e6d6227a-716a-4dcf-9d73-be4b5eb9f18c)
 
+
+
 Join Client-1 to your domain (mydomain.com)
 - From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
 - From the Azure Portal, restart Client-1
@@ -116,6 +115,7 @@ Join Client-1 to your domain (mydomain.com)
 - Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain
 - Create a new OU named “_CLIENTS” and drag Client-1 into there (Step is not really necessary, just for organizational purposes. I guess I skipped this in the lab!)
 
+![image](https://github.com/kphillip1/configure-ad/assets/165929885/83463381-d72f-4441-9488-cbd6b2219fb0)
 
 Setup Remote Desktop for non-administrative users on Client-1
 - Log into Client-1 as mydomain.com\jane_admin and open system properties
@@ -123,6 +123,10 @@ Setup Remote Desktop for non-administrative users on Client-1
 - Allow “domain users” access to remote desktop
 - You can now log into Client-1 as a normal, non-administrative user now
 - Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
+
+![image](https://github.com/kphillip1/configure-ad/assets/165929885/8d51f1d8-a4a8-4d8a-a9dd-6e498e3c9ac9)
+![image](https://github.com/kphillip1/configure-ad/assets/165929885/171694d8-fa8f-43a5-9d09-5095639ab6d2)
+
 
 Create a bunch of additional users and attempt to log into client-1 with one of the users
 - Login to DC-1 as jane_admin
@@ -132,9 +136,9 @@ Create a bunch of additional users and attempt to log into client-1 with one of 
 - When finished, open ADUC and observe the accounts in the appropriate OU
 - attempt to log into Client-1 with one of the accounts (take note of the password in the script)
 
-Finish.
+![image](https://github.com/kphillip1/configure-ad/assets/165929885/2c97e5d8-9fff-44ec-922a-1dfcb010374f)
 
-
+<h2 align="center"> Nice work! <br>Repeat this lab a couple times to build intuition for deploying Active Directory </h2>
 
 
 
