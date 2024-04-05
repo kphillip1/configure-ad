@@ -114,7 +114,7 @@ Create a bunch of additional users and attempt to log into client-1 with one of 
 
 ![image](https://github.com/kphillip1/configure-ad/assets/165929885/2c97e5d8-9fff-44ec-922a-1dfcb010374f)
 
-<h2 align="center"> Nice work! <br>Repeat this lab a couple times to build intuition for deploying Active Directory </h2>
+<h2 align="center"> Nice work! <br>Repeat this lab a couple times to build intuition for deploying Active Directory and creating users with a PowerShell script </h2>
 
 
 
